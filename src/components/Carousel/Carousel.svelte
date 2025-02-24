@@ -156,6 +156,14 @@
     await methods.showNextPage({ animated })
   }
 
+  export function pause() {
+    progressManager.pause();
+  }
+
+  export function resume() {
+    progressManager.resume();
+  }
+
   let pageWindowWidth = 0
   let pageWindowElement
   let particlesContainer
